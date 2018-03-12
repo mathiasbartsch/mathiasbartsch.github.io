@@ -73,6 +73,10 @@ nav[role=navigation]  a {
     text-decoration: none;
 }
 
+nav[role=navigation]  a.menu-link:active { text-decoration: none; color : #888; }
+nav[role=navigation]  a.menu-link:visited { text-decoration: none; color : #888; }
+nav[role=navigation]  a.menu-link:hover { text-decoration: none; color : #888; }
+
 nav[role=navigation] ul {
     text-align: center;
     padding: 0;
