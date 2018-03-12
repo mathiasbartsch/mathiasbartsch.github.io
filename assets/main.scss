@@ -1,5 +1,9 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+
 ---
 
-@import "minima";
+@import 'normalize/normalize';
+@import 'gutenberg/gutenberg';
+
+@import '_layout/header';
+
