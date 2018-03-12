@@ -22,12 +22,28 @@
 // }
 
 
-body {
-    background-color:#f8f8f8;
+html, body {
+    background-color:#222;
+    height: 100%;
+    margin: 0;
 }
+
+.page-wrapper{
+    background-color:#f8f8f8;
+    min-height: 100%;
+    margin: 0;
+    padding-top: 1em;
+    min-width: 100%;
+} 
 
 header.site-header {
     max-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0em;
+}
+
+.page-content {
+    padding-bottom: 2em;
 }
 
 a.menu-link {
@@ -40,7 +56,6 @@ a.menu-link {
     background-color: #222;
     color: #fff;
     margin: auto;
-    margin-top: 1em;
 }
 
 a.menu-link:active { text-decoration: none; color : rgb(255, 255, 255); }
@@ -81,8 +96,12 @@ nav[role=navigation] ul {
     div.marginRight {
         float: right;
     }
+    .page-wrapper{
+        padding-top: 0em;
+    } 
 }
 
 div#marginClear {
     clear: both;
 }
+

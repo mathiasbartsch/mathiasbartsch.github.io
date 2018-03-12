@@ -4,21 +4,23 @@
   {% include head.html %}
 
   <body>
+    <div class="page-wrapper">
+      {% include header.html %}
 
-    {% include header.html %}
+      <main class="page-content" aria-label="Content">
+        <div class="content-Wrapper"></div>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+            <div class="caption">
+                {% if page.caption %}
+                  <h1 class="page-heading">{{ page.caption }}</h1>
+                {% endif %}
+            </div>
 
-          <div class="caption">
-              {% if page.caption %}
-                <h1 class="page-heading">{{ page.caption }}</h1>
-              {% endif %}
-          </div>
+          {{ content }}
           
-        {{ content }}
-      </div>
-    </main>
+        </div>
+      </main>
+  </div>
 
     {% include footer.html %}
 
