@@ -9,6 +9,13 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+
+          <div class="caption">
+              {% if page.caption %}
+                <h1 class="page-heading">{{ page.caption }}</h1>
+              {% endif %}
+          </div>
+          
         {{ content }}
       </div>
     </main>

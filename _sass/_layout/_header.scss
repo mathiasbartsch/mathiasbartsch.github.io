@@ -1,4 +1,88 @@
-header [role="banner"]{
-  background-color: black;    
+
+// body {
+//     background-color: yellow;
+// }
+// main {
+//     background-color:red;
+// }
+// header.site-header {
+//     background-color: green;
+// }
+// footer {
+//     background-color: blue;
+// }
+// nav[role=navigation] ul {
+//     background-color: red;
+// }
+// nav[role=navigation]  li {
+//     background-color: blue;
+// }
+// a.menu-link {
+//     background-color: blue;
+// }
+
+
+body {
+    background-color:#f8f8f8;
 }
 
+header.site-header {
+    max-width: 100%;
+}
+
+a.menu-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 3em;
+    height: 3em;
+    padding-top: 0.65em;
+    background-color: #222;
+    color: #fff;
+    margin: auto;
+    margin-top: 1em;
+}
+
+a.menu-link:active { text-decoration: none; color : rgb(255, 255, 255); }
+a.menu-link:visited { text-decoration: none; color : rgb(255, 255, 255); }
+a.menu-link:hover { text-decoration: none; color : rgb(255, 255, 255); }
+
+nav[role=navigation]  li {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 1em 0 1em;
+}
+
+nav[role=navigation]  a {
+    text-decoration: none;
+}
+
+nav[role=navigation] ul {
+    text-align: center;
+    padding: 0;
+}
+
+@media screen and (min-width: 48.25em) {
+    a.menu-link {
+        float: left;
+        margin: 1em;
+    }
+    nav[role=navigation] ul {
+        float: right;
+        margin-top: 1.65em;
+        margin-right: 1.65em;
+    }
+
+    div.marginLeft {
+        float: left;
+    }
+    
+    div.marginRight {
+        float: right;
+    }
+}
+
+div#marginClear {
+    clear: both;
+}
